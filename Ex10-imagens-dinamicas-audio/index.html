@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imagens/imagem-media.png" type="image/png"> <!-- Pensar na barra de rolagem -->
+        <img src="imagens/imagem-grande.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <p><strong>Lembrando que a ordem importa, se ele não conseguir reproduzir o mp3, vai tentar o ogg, se não conseguir o ogg, irá tentar o wav.</strong></p>
+    <!--<audio src="./midia/zings.mp3" controls autoplay></audio>-->
+    <!-- M3 WAV OGG-->
+    <h2>Tipos de preload (padrão: auto)</h2>
+    <ul>
+        <li>auto</li>
+        <p>Só vai considerar que o site terminou de carregar depois de carregar todo o conteúdo (no caso, o áudio) (não recomendável pois costumam ser arquivos mais pesados e podem atrapalhar a navegação).</p>
+        <li>metadata</li>
+        <p>Vai carregar apenas nome dos arquivos, datas, informações.</p>
+        <li>none</li>
+        <p>Não vai carregar nada até apertar o play.</p>
+    </ul>
+    <p></p>
+    <h2>controls e loop</h2>
+    <ul>
+        <li>controls</li>
+        <p>Mostra os controles (play, pause, volume...).</p>
+        <li>loop</li>
+        <p>Recomeça a música ao acabar.</p>
+    </ul>
+    <audio preload="metadata" controls loop> 
+        <source src="./midia/zings.mp3" type="audio/mpeg">
+        <source src="./midia/zings.ogg" type="audio/ogg">
+        <source src="./midia/zings.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="./midia/zings.mp3" download="zings.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio>
+</body>
+</html>

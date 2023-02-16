@@ -1,0 +1,31 @@
+@charset "UFT-8";
+
+* { /* Configurações Globais */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #CC835D;
+}
+
+h1 {
+    color: #2E5780;
+}
+
+h2 {
+    color: #47805E;
+}
+
+p {
+    text-align: justify;
+    color: rgb(70, 70, 70);
+}
+
+main {
+    width: auto;
+    padding: 20px 40px;
+    margin: 50px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.308);
+}

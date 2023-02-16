@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="file:///C:\Users\Pichau\OneDrive\html-css\ex04-favicon\favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Links Internos e Externos com a tag &lt;a&gt;</h1>
+    <h2>Valores do Atributo target:</h2>
+    <dl>
+        <dt>_blank</dt>
+        <dd>Vai abrir o link em uma nova janela em branco.</dd>
+        <dt>_self</dt>
+        <dd>Vai abrir o link na janela ou frame atual (padrão).</dd>
+        <dt>_top</dt>
+        <dd>Vai desfazer todos os frames e abrir o destino no navegador completo.</dd>
+        <dt>_parent</dt>
+        <dd>Similiar ao uso do _top em uma refêrencia à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.</dd>
+    </dl>
+    <h2>Valores do Atributo rel</h2>
+    <dl>
+        <dt>next</dt> <!-- Definition Term -->
+        <dd>Indica que o link é para a próxima parte do documento atual.</dd> <!-- Definition Description -->
+        <dt>prev</dt>
+        <dd>Indica que o link é para a parte anterior do documento atual.</dd>
+        <dt>author</dt>
+        <dd>Indica que é um link para o site do autor do artigo atual.</dd>
+        <dt>external</dt>
+        <dd>Indica que é um link para outro site que não faz parte do site.</dd>
+        <dt>nofollow</dt>
+        <dd>indica que é um link para um site não endossado, como um link pago.</dd>
+    </dl>
+    <h2>Exemplos de Links Externos</h2>
+    <p>&lt;a href="URL" target="_blank" rel="external"&gt;Palavra marcada&lt;/a&gt;</p>
+    <p>Você pode acessar meu <a href="https://www.facebook.com/Joaopedromaximodasilva" target="_blank" rel="external">Facebook</a>.</p>
+    <p>Você também pode acessar o meu canal do <a href="https://www.youtube.com/channel/UC0321PQXqwFICkvjGCN9r8w" target="_blank" rel="external">Youtube</a>.</p>
+    <h2>Exemplo de Links Internos</h2>
+    <p>&lt;a href="caminho" target="_self" (opcional) rel="prox ou prev"&gt;Palavra marcada&lt;/a&gt;</p>
+    <strong>
+        <p>Para acessar arquivos na própria pasta: <code>./</code><br>Para acessar arquivos na pasta anterior: <code>../</code></p>
+    </strong>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a>.</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="prox">página de noticias</a>.</p>
+    <h2>Links para Download</h2>
+    <p>&lt;a href="caminho" download="nome do arquivo" type="application/pdf" (varia conforme o tipo do arquivo)&gt;Palavra marcada&lt;/a&gt;</p>
+    <p><a href="Livro/livro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em PDF</a></p>
+    <p><a href="Livro/livro.rar" download="meulivro.rar" type="application/x-rar-compressed">Baixar livro compactado</a></p>
+</body>
+</html>
